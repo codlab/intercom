@@ -35,7 +35,11 @@ public class WearSenderObject {
 
     public void stop() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
-            mHandlerThread.quitSafely();
+            try {
+                mHandlerThread.quitSafely();
+            } catch (Exception e) {
+
+            }
         } else {
             mHandlerThread.stop();
         }
