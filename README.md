@@ -11,10 +11,10 @@ This library is licensed under the Apache 2.0 License. Check out the LICENSE.txt
 - implements a simple receiver Class
 
 # How to install this project
-This project is available on jCentral. To use the project on Android Studio, make sure you have the following in your project's build.gradle file :
+This project is available on jitpack. To use the project on Android Studio, make sure you have the following in your project's build.gradle file :
 ```
 repositories {
-	    jcenter()
+	    maven { url "https://jitpack.io" }
 	}
 ```
 and compile the project in your module's build.gradle :
